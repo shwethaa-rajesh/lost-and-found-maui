@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:LostAndFound.ViewModels"
+             x:DataType="viewmodel:MainPageViewModel"
+             x:Class="LostAndFound.MainPage">
+
+     <ScrollView>
+
+            <VerticalStackLayout
+                    Spacing="25"
+                    Padding="25,0"
+                    VerticalOptions="FillAndExpand"
+                    >
+
+                <FlexLayout JustifyContent="SpaceBetween" Margin="0,20" >
+                    <Image
+                        Source="menu.png"
+                        HeightRequest="20"
+                        HorizontalOptions="Center" />
+                    <Image
+                        Source="search.png"
+                        HeightRequest="20"
+                        HorizontalOptions="Center" />
+
+                </FlexLayout>
+                <Label Text="Hello!" FontSize="28"  ></Label>
+                <VerticalStackLayout Spacing="28" Margin="0,12" >
+                    <Border 
+                        StrokeShape="RoundRectangle 10"
+                        BackgroundColor="LavenderBlush"
+                        HorizontalOptions="Center">
+                        <Border.GestureRecognizers>
+                            
+                    <TapGestureRecognizer Command="{Binding onClickReportCommand }" />
+
+                        </Border.GestureRecognizers>
+                        <VerticalStackLayout BackgroundColor="Lavender" Padding="20" Spacing="12"  >
+                            <VerticalStackLayout.Shadow>
+                                <Shadow Brush="Black"
+                                        Offset="40,40"
+                                        Radius="40"
+                                        Opacity="0.8" />
+                            </VerticalStackLayout.Shadow>
+                            <Image
+                                Source="lost.png"
+                                HeightRequest="30"
+                                HorizontalOptions="Start" />
+                            <Label Text="Report a lost item" FontSize="20"></Label>
+                            <Label Text="Add a report of the item lost with a photo and the location"></Label>
+                        </VerticalStackLayout>
+                    </Border>
+                    <Border 
+                        StrokeShape="RoundRectangle 10"
+                        BackgroundColor="LavenderBlush"
+                        HorizontalOptions="Center">
+                        
+                        <Border.GestureRecognizers>
+                            
+                    <TapGestureRecognizer Command="{Binding onClickReportCommand }" />
+
+                        </Border.GestureRecognizers>
+                        <VerticalStackLayout BackgroundColor="LightYellow" Padding="20" Spacing="12">
+                             <VerticalStackLayout.Shadow>
+                                <Shadow Brush="Black"
+                                        Offset="40,40"
+                                        Radius="40"
+                                        Opacity="0.8" />
+                            </VerticalStackLayout.Shadow>
+                            <Image
+                                Source="found.png"
+                                HeightRequest="30"
+                                HorizontalOptions="Start" />
+                            <Label Text="Report a found item" FontSize="20"></Label>
+                            <Label Text="Add a report of the item found with a photo and the location"></Label>
+                        </VerticalStackLayout>
+                    </Border>
+                    <Border 
+                        StrokeShape="RoundRectangle 10"
+                        BackgroundColor="LavenderBlush"
+                        HorizontalOptions="Center">
+                        <VerticalStackLayout BackgroundColor="Lavender" Padding="20" Spacing="12">
+                             <VerticalStackLayout.Shadow>
+                                <Shadow Brush="Black"
+                                        Offset="40,40"
+                                        Radius="40"
+                                        Opacity="0.8" />
+                            </VerticalStackLayout.Shadow>
+                            <Image
+                                Source="search.png"
+                                HeightRequest="30"
+                                HorizontalOptions="Start" />
+                            <Label Text="Lost and found items" FontSize="20"></Label>
+                            <Label Text="Go through history of previous lost and found items"></Label>
+                        </VerticalStackLayout>
+                    </Border>
+                </VerticalStackLayout>
+
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+</ContentPage>
+

@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:LostAndFound.ViewModels"
+             x:DataType="viewmodel:ReportPageViewModel"
+             x:Class="LostAndFound.Views.ReportPage"
+             Title="ReportPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <VerticalStackLayout Padding="20" IsVisible="{Binding IsInputPage}">
+                <HorizontalStackLayout Padding="0,10"  >
+                    <Label TextColor="MediumPurple" Text="Home">
+                        <Label.GestureRecognizers>
+
+                            <TapGestureRecognizer Command="{Binding onClickHomeCommand}" />
+
+                        </Label.GestureRecognizers>
+
+                    </Label>
+
+                </HorizontalStackLayout>
+                <Label Text="Create ad" FontAttributes="Bold" FontSize="20" Margin="0, 0,0,20" />
+                <Label x:Name="eg1" Text="Category" FontAttributes="Bold" FontSize="Body" />
+                <Border StrokeShape="RoundRectangle 20"  Margin="0,10" Padding="5" StrokeThickness="0"
+            BackgroundColor="#F0F0F2"  >
+                    <Picker ItemsSource="{Binding CategoryList}" 
+                Title="Select a category" SelectedItem="{Binding SelectedItem}" 
+                    >
+                    </Picker>
+                </Border>
+
+                <Label Text="Post type" FontAttributes="Bold" FontSize="Body" Margin="0,10" />
+                <HorizontalStackLayout Spacing="24">
+                    <Button x:Name="Lost" Clicked="Button_Clicked" BackgroundColor="MediumPurple" WidthRequest="80" Text="Lost"></Button>
+                    <Button x:Name="Found" Clicked="Button_Clicked" BackgroundColor="#F4D368" WidthRequest="80" Text="Found"></Button>
+
+                </HorizontalStackLayout>
+
+                <Label Text="Title" FontAttributes="Bold" FontSize="Body" Margin="0,25,0 ,10" />
+                <Border StrokeShape="RoundRectangle 20"  Padding="5" StrokeThickness="0"
+            BackgroundColor="#F0F0F2"  >
+                    <Entry Text="{Binding Title}" Placeholder="Enter title" PlaceholderColor="Gray" ></Entry>
+
+                </Border>
+                <Label Text="A title needs atleast 12 characters" Margin="5,0" FontSize="12" FontAttributes="None"   />
+
+                <Label Text="Description" FontAttributes="Bold" FontSize="Body" Margin="0,25,0 ,10" />
+                <Border StrokeShape="RoundRectangle 20"  Padding="5" StrokeThickness="0"
+            BackgroundColor="#F0F0F2"  >
+                    <Entry Text="{Binding Description}" Placeholder="Enter description" PlaceholderColor="Gray" ></Entry>
+
+                </Border>
+                <Label Text="Describe important information like color, feature, etc " Margin="5,0" FontSize="12" FontAttributes="None"   />
+
+                <Label Text="Location" FontAttributes="Bold" FontSize="Body" Margin="0,25,0 ,10" />
+                <Border StrokeShape="RoundRectangle 20"  Padding="5" StrokeThickness="0"
+            BackgroundColor="#F0F0F2"  >
+                    <Entry Text="{Binding Location}" Placeholder="Enter location" PlaceholderColor="Gray" ></Entry>
+
+                </Border>
+                <Label Text="Where item was found" Margin="5,0" FontSize="12" FontAttributes="None"   />
+
+                <Button Margin="0,30" Padding="0,15" FontSize="20" FontAttributes="Bold" Text="Continue"
+                Command="{Binding onClickSubmitCommand}" BackgroundColor="#F4D368" ></Button>
+            </VerticalStackLayout>
+
+
+            <VerticalStackLayout IsVisible="{Binding IsPhotoPage}" Padding="20">
+                <HorizontalStackLayout Padding="0,10"  >
+                    <Label TextColor="MediumPurple" Text="Back">
+                        <Label.GestureRecognizers>
+
+                            <TapGestureRecognizer Command="{Binding onClickSubmitCommand}"
+                                                  />
+
+                        </Label.GestureRecognizers>
+
+                    </Label>
+
+                </HorizontalStackLayout>
+                <Label Text="Select Picture" FontSize="24" FontAttributes="Bold" Margin="0,0,0,20"/>
+                <Label Text="Add upto 4 pictures. Use real pictures and not catalogs" TextColor="Grey" Margin="0,20"></Label>
+                <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="Auto,Auto" Padding="20" ColumnSpacing="24" RowSpacing="24">
+
+                    <Border StrokeShape="RoundRectangle 15" Padding="50" BackgroundColor="Lavender">
+                         <Border.GestureRecognizers>
+
+                            <TapGestureRecognizer Command="{Binding selectPhotoCommand}"
+                                                  CommandParameter="1"/>
+
+                        </Border.GestureRecognizers>
+                        <Image Source="{Binding Image1}" WidthRequest="40">
+
+
+                        </Image>
+
+                    </Border>
+                    <Border StrokeShape="RoundRectangle 15" Grid.Row="0" Grid.Column="1" Padding="50" BackgroundColor="Lavender">
+                        <Border.GestureRecognizers>
+
+                            <TapGestureRecognizer Command="{Binding selectPhotoCommand}"
+                                                  CommandParameter="2"/>
+
+                        </Border.GestureRecognizers>
+                        <Image Source="{Binding Image2}" WidthRequest="40">
+
+
+                        </Image>
+
+                    </Border>
+                    <Border StrokeShape="RoundRectangle 15" Grid.Row="1" Grid.Column="0"  Padding="50" BackgroundColor="Lavender">
+                        <Border.GestureRecognizers>
+
+                            <TapGestureRecognizer Command="{Binding selectPhotoCommand}"
+                                                  CommandParameter="3"/>
+
+                        </Border.GestureRecognizers>
+                        <Image Source="{Binding Image3}" WidthRequest="40" >
+
+
+                        </Image>
+
+                    </Border>
+                    <Border StrokeShape="RoundRectangle 15" Grid.Row="1" Grid.Column="1" Padding="50" BackgroundColor="Lavender">
+                        <Border.GestureRecognizers>
+
+                            <TapGestureRecognizer Command="{Binding selectPhotoCommand}"
+                                                  CommandParameter="4"/>
+
+                        </Border.GestureRecognizers>
+                        <Image Source="{Binding Image4}" WidthRequest="40">
+
+
+                        </Image>
+
+                    </Border>
+                </Grid>
+                <Button Text="Continue" Command="{Binding selectPhotoCommand}" />
+
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

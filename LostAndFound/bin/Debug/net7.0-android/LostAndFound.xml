@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LostAndFound</name>
+    </assembly>
+    <members>
+        <member name="T:LostAndFound.ViewModels.MainPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:LostAndFound.ViewModels.MainPageViewModel.Navigation">
+            <inheritdoc cref="F:LostAndFound.ViewModels.MainPageViewModel.navigation"/>
+        </member>
+        <member name="F:LostAndFound.ViewModels.MainPageViewModel._onClickReportCommand">
+            <summary>The backing field for <see cref="P:LostAndFound.ViewModels.MainPageViewModel.onClickReportCommand"/>.</summary>
+        </member>
+        <member name="P:LostAndFound.ViewModels.MainPageViewModel.onClickReportCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:LostAndFound.ViewModels.MainPageViewModel.onClickReport"/>.</summary>
+        </member>
+        <member name="T:LostAndFound.ViewModels.ReportPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:LostAndFound.ViewModels.ReportPageViewModel.Navigation">
+            <inheritdoc cref="F:LostAndFound.ViewModels.ReportPageViewModel.navigation"/>
+        </member>
+        <member name="P:LostAndFound.ViewModels.ReportPageViewModel.CategoryList">
+            <inheritdoc cref="F:LostAndFound.ViewModels.ReportPageViewModel.categoryList"/>
+        </member>
+        <member name="P:LostAndFound.ViewModels.ReportPageViewModel.SelectedItem">
+            <inheritdoc cref="F:LostAndFound.ViewModels.ReportPageViewModel.selectedItem"/>
+        </member>
+        <member name="P:LostAndFound.ViewModels.ReportPageViewModel.Title">
+            <inheritdoc cref="F:LostAndFound.ViewModels.ReportPageViewModel.title"/>
+        </member>
+        <member name="P:LostAndFound.ViewModels.ReportPageViewModel.Image1">
+            <inheritdoc cref="F:LostAndFound.ViewModels.ReportPageViewModel.image1"/>
+        </member>
+        <member name="P:LostAndFound.ViewModels.ReportPageViewModel.Image2">
+            <inheritdoc cref="F:LostAndFound.ViewModels.ReportPageViewModel.image2"/>
+        </member>
+        <member name="P:LostAndFound.ViewModels.ReportPageViewModel.Image3">
+            <inheritdoc cref="F:LostAndFound.ViewModels.ReportPageViewModel.image3"/>
+        </member>
+        <member name="P:LostAndFound.ViewModels.ReportPageViewModel.Image4">
+            <inheritdoc cref="F:LostAndFound.ViewModels.ReportPageViewModel.image4"/>
+        </member>
+        <member name="P:LostAndFound.ViewModels.ReportPageViewModel.Padding">
+            <inheritdoc cref="F:LostAndFound.ViewModels.ReportPageViewModel.padding"/>
+        </member>
+        <member name="P:LostAndFound.ViewModels.ReportPageViewModel.Description">
+            <inheritdoc cref="F:LostAndFound.ViewModels.ReportPageViewModel.description"/>
+        </member>
+        <member name="P:LostAndFound.ViewModels.ReportPageViewModel.Location">
+            <inheritdoc cref="F:LostAndFound.ViewModels.ReportPageViewModel.location"/>
+        </member>
+        <member name="P:LostAndFound.ViewModels.ReportPageViewModel.ReportType">
+            <inheritdoc cref="F:LostAndFound.ViewModels.ReportPageViewModel.reportType"/>
+        </member>
+        <member name="P:LostAndFound.ViewModels.ReportPageViewModel.IsInputPage">
+            <inheritdoc cref="F:LostAndFound.ViewModels.ReportPageViewModel.isInputPage"/>
+        </member>
+        <member name="P:LostAndFound.ViewModels.ReportPageViewModel.IsPhotoPage">
+            <inheritdoc cref="F:LostAndFound.ViewModels.ReportPageViewModel.isPhotoPage"/>
+        </member>
+        <member name="F:LostAndFound.ViewModels.ReportPageViewModel._onClickHomeCommand">
+            <summary>The backing field for <see cref="P:LostAndFound.ViewModels.ReportPageViewModel.onClickHomeCommand"/>.</summary>
+        </member>
+        <member name="P:LostAndFound.ViewModels.ReportPageViewModel.onClickHomeCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:LostAndFound.ViewModels.ReportPageViewModel.onClickHome"/>.</summary>
+        </member>
+        <member name="F:LostAndFound.ViewModels.ReportPageViewModel._onClickSubmitCommand">
+            <summary>The backing field for <see cref="P:LostAndFound.ViewModels.ReportPageViewModel.onClickSubmitCommand"/>.</summary>
+        </member>
+        <member name="P:LostAndFound.ViewModels.ReportPageViewModel.onClickSubmitCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:LostAndFound.ViewModels.ReportPageViewModel.onClickSubmit"/>.</summary>
+        </member>
+        <member name="F:LostAndFound.ViewModels.ReportPageViewModel._selectPhotoCommand">
+            <summary>The backing field for <see cref="P:LostAndFound.ViewModels.ReportPageViewModel.selectPhotoCommand"/>.</summary>
+        </member>
+        <member name="P:LostAndFound.ViewModels.ReportPageViewModel.selectPhotoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:LostAndFound.ViewModels.ReportPageViewModel.selectPhoto(System.String)"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Navigation">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Navigation" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CategoryList">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CategoryList" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedItem">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedItem" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Image1">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Image1" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Image2">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Image2" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Image3">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Image3" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Image4">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Image4" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Padding">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Padding" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Description">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Description" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Location">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Location" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ReportType">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ReportType" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsInputPage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsInputPage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsPhotoPage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsPhotoPage" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Navigation">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Navigation" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CategoryList">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CategoryList" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedItem">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedItem" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Image1">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Image1" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Image2">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Image2" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Image3">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Image3" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Image4">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Image4" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Padding">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Padding" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Description">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Description" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Location">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Location" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ReportType">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ReportType" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsInputPage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsInputPage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsPhotoPage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsPhotoPage" generated properties.</summary>
+        </member>
+    </members>
+</doc>
